@@ -9,7 +9,8 @@ public class Main {
         double weight;
         BigDecimal bd;
 
-    
+        int i = 1;
+        while(i <= 2) {
 
             System.out.print("体重（kg）を入力してください: ");
             weight = scanner.nextDouble();
@@ -22,7 +23,9 @@ public class Main {
 
             bd = new BigDecimal(result);
             bd = bd.setScale(2, RoundingMode.HALF_UP);
+            System.out.println(i + "人目のBMI");
             System.out.println(bd);
-            
+            i = i + 1;
+        }
     }
 }
