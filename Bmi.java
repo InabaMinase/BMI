@@ -1,13 +1,12 @@
 import java.util.Scanner;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
+
 
 public class Bmi {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double height;
         double weight;
-        BigDecimal bd;
+        double bmi;
 
         int i = 1;
         while(i <= 2) {
@@ -19,12 +18,11 @@ public class Bmi {
             height = scanner.nextDouble();
             height = height * 0.01;
 
-            double result = weight / (height * height);
+           bmi = weight / (height * height);
 
-            bd = new BigDecimal(result);
-            bd = bd.setScale(2, RoundingMode.HALF_UP);
+
             System.out.println(i + "人目のBMI");
-            System.out.println(bd);
+            System.out.printf("%.2f%n",bmi);
             i = i + 1;
         }
     }
