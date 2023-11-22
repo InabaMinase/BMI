@@ -14,7 +14,7 @@ public class Bmi {
             System.out.print("体重（kg）を入力してください: ");
             weight = scanner.nextDouble();
 
-            System.out.print("身長（m）を入力してください: ");
+            System.out.print("身長（cm）を入力してください: ");
             height = scanner.nextDouble();
             height = height * 0.01;
 
